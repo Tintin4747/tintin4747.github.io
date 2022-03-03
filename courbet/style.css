@@ -1,0 +1,184 @@
+@font-face { font-family: "Brush Script MT"; src: url('brush.TTF'); }
+
+body {
+    background : floralwhite;   /*Fond de la page*/
+
+}
+
+html{
+    scroll-behavior: smooth; /*Pour avoir un scrolling fluide lorsqu'on clic sur un lien "ancre"*/
+}
+
+#menu {   /*Affichage menu*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: burlywood;
+    z-index: 1;
+}
+
+#menu li {
+    float: left;
+
+}
+
+#menu li a {  /*Apparance boutons du menu*/
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition : 0.5s;
+}
+
+#menu li a:hover {  /*Apparance d'un bouton du menu quand le curseur est dessus*/
+    background-color: #6A493E;
+
+}
+
+
+#site{   /*Apparance du cadre principal*/
+    width: 1300px;
+    height:2500px;
+    margin: 0 auto;
+    padding: 0 25px 25px 25px;
+}
+
+#site h1 {
+    font-family: georgia, serif;
+    position : center;
+    color : #6A493E;
+}
+
+ul {    /*Position du menu lorsqu'on scroll la page*/
+    position : -webkit-sticky;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+#portrait {   /*Position portrait de Gustave COURBET*/
+    position : absolute;
+    top : 250px;
+    left : 1200px;
+}
+
+#portrait img {
+    width : 300px;
+}
+
+
+#bio p {          /*Position texte présentation + bio Gustave COURBET*/
+    overflow-wrap: break-word;
+    text-align: justify;
+    width: 650px;
+    height: 500px;
+    position: absolute;
+    top: 320px;
+    left : /*19%*/365px;
+    color : #6A493E;
+}
+
+#bio h2 {          /*Position texte présentation + bio Gustave COURBET*/
+    overflow-wrap: break-word;
+    text-align: justify;
+    width: 650px;
+    height: 500px;
+    position: absolute;
+    top: 270px;
+    left : /*19%*/365px;
+    color : #6A493E;
+}
+
+
+#GalerieTitre h2{
+    font-family: georgia, serif;
+    position : absolute;
+    color : #6A493E;
+    top : 650px;
+    left : 350px;
+}
+
+
+#Galerie img{
+    max-width: 400px;
+    max-height: 300px;
+    padding: 10px;
+}
+
+#Galerie{
+    top:620px;
+}
+
+#vidéo{
+    position:relative;
+    top:750px;
+}
+
+#videoText h2{
+    font-family: georgia, serif;
+    color:#6A493E;
+    position : absolute;
+    top:1200px;
+    left:980px;
+}
+
+#videoText p{
+    overflow-wrap: break-word;
+    text-align: justify;
+    width: 570px;
+    height: 600px;
+    position: absolute;
+    top: 1330px;
+    left : /*19%*/1000px;
+    color : #6A493E;
+}
+
+#titre {
+    position: center;
+    top: 1125px;
+}
+
+#map{
+    position:absolute;
+    top: 1800px;
+    left:1100px;
+}
+
+#myBtn{
+    top:1600px;
+    left : 43%;
+    position : relative;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+#tarifs{
+    position:relative;
+    top:800px;
+    overflow-wrap: break-word;
+    width:700px;
+}
+
+
+
+#myBtn:hover{
+    background-color: #555555;
+    color: white;
+}
+
+#oeuvre{
+    position : absolute;
+    top:1000px;
+}
+
